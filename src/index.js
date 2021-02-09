@@ -15,7 +15,20 @@ const createWindow = () => {
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
+ 
+  //Where to have custom menu
+    const { Menu, MenuItem } = require('electron')
 
+    const menu = new Menu()
+    menu.append(new MenuItem({
+        label: '|Phaktionz|',
+        submenu: [
+        {
+        label: 'Rules',
+        click: () => { win.loadFile('src/lib/')}
+        }
+        ]
+    }))
   
   
 };

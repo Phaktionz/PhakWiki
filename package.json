@@ -1,8 +1,9 @@
 {
-  "name": "phakdev",
-  "productName": "phakdev",
+  "name": "phakwiki",
+  "productName": "phakwiki",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "This app is built to contain information about the Phaktionz TCG and it's story revolving of it. 
+  Here you may find decks, rules, character profiles, etc.",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
