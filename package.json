@@ -1,9 +1,8 @@
 {
-  "name": "phakwiki",
-  "productName": "phakwiki",
+  "name": "Phaktionz-Wiki",
+  "productName": "Phaktionz-Wiki",
   "version": "1.0.0",
-  "description": "This app is built to contain information about the Phaktionz TCG and it's story revolving of it. 
-  Here you may find decks, rules, character profiles, etc.",
+  "description": "A wiki of the Phaktionz TCG and it's story revolving of it.",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -25,13 +24,14 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "phakdev"
+            "name": "phakwiki"
           }
         },
         {
           "name": "@electron-forge/maker-zip",
           "platforms": [
-            "darwin"
+            "darwin",
+            "linux"
           ]
         },
         {
@@ -41,12 +41,22 @@
         {
           "name": "@electron-forge/maker-rpm",
           "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-snap",
+          "config": {}
         }
       ]
     }
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "@electron-forge/maker-snap": "^6.0.0-beta.54",
+    "electron-squirrel-startup": "^1.0.0",
+    "rpmbuild": "0.0.23"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
