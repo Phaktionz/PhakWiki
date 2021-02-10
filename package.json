@@ -43,27 +43,34 @@
           "config": {}
         },
         {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {}
-        },
-        {
           "name": "@electron-forge/maker-snap",
           "config": {}
         }
       ]
+    },
+    "dependencies": {
+      "electron-squirrel-startup": "^1.0.0",
+      "rcedit": "^3.0.0",
+      "rpmbuild": "0.0.23",
+      "snapcraft": "4.5.1"
+    },
+    "devDependencies": {
+      "@electron-forge/cli": "^6.0.0-beta.54",
+      "@electron-forge/maker-deb": "^6.0.0-beta.54",
+      "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+      "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+      "@electron-forge/maker-zip": "^6.0.0-beta.54",
+      "electron": "11.2.3"
     }
-  },
-  "dependencies": {
-    "@electron-forge/maker-snap": "^6.0.0-beta.54",
-    "electron-squirrel-startup": "^1.0.0",
-    "rpmbuild": "0.0.23"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-deb": "^6.0.0-beta.54",
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-snap": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "electron": "11.2.3"
+    "electron": "^11.2.3",
+    "electron-forge-maker-snap": "^22.10.4"
   }
 }
